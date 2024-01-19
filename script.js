@@ -214,6 +214,10 @@ function defeatMonster() {
   update(locations[4]);
 }
 
+function isMonsterHit() {
+  return Math.random() > .2 || health < 20;
+}
+
 function lose() {
   update(locations[5]);
 }
